@@ -85,6 +85,10 @@
   }
 }
 
+.hamberClose-icon {
+  display: none;
+}
+
 /* Navigation Bar MEDIA QURIE*/
 @media (max-width: 768px) {
   .Nav-InnerContainer-Logo {

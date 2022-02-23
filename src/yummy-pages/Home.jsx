@@ -8,10 +8,9 @@ export const Home = () => {
   return (
     <PageHandler>
       <div className="HomeMainContainer">
-        <HeroImage />
+        <HeroImage ShowSearch Discription="Delicious recipes just click away" />
         <Recipies />
       </div>
     </PageHandler>
   );
 };
-localStorage

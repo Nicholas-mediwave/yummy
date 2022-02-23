@@ -95,6 +95,15 @@
   border-radius: 15px;
 }
 
+.RecipeBox img {
+  width: 343px;
+  height: 223px;
+  border-radius: 15px 15px 0 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .RecipeBoxContent {
   padding: 0px 20px;
 }
@@ -102,6 +111,7 @@
 .RecipeBoxContentName {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 20px;
 }
 
