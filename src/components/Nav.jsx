@@ -1,9 +1,11 @@
 import { ReactComponent as YummyLogo } from "../images/yummylogo/Yummy.svg";
 import { ReactComponent as Hamber } from "../images/nav/hamber/Hamber.svg";
 import { ReactComponent as CloseIcon } from "../images/nav/hamber/CloseIcon.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Nav = () => {
+  const Location = useLocation();
+  console.log(Location.pathname);
   const HamberClick = () => {
     const Movform = document.querySelector("#Nav-InnerContainer-Menu-id");
     Movform.classList.add("d-block");
@@ -51,12 +53,24 @@ export const Nav = () => {
             className="Nav-InnerContainer-Menu"
             id="Nav-InnerContainer-Menu-id"
           >
-            <a href="#header" className="active" onClick={CloseClick}>
-              Home
-            </a>
-            <a href="#Recipe" onClick={CloseClick}>
-              Recipe
-            </a>
+            {Location.pathname === "/" ? (
+              <a href="#header" className="active" onClick={CloseClick}>
+                Home
+              </a>
+            ) : (
+              <a href="/#header" className="active" onClick={CloseClick}>
+                Home
+              </a>
+            )}
+            {Location.pathname === "/" ? (
+              <a href="#Recipe" onClick={CloseClick}>
+                Recipe
+              </a>
+            ) : (
+              <a href="/#Recipe" onClick={CloseClick}>
+                Recipe
+              </a>
+            )}
           </div>
         </div>
       </div>

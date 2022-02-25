@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ReactComponent as BacktoHome } from "../images/addrecipice/BacktoHome.svg";
 
 export const AddRecipiesForm = () => {
@@ -8,9 +9,9 @@ export const AddRecipiesForm = () => {
       <div className="AddRecipeFormContainer">
         {/* <!-- BackToHome a tag div STARTING --> */}
         <div className="BackToHome">
-          <a href="index.html">
+          <Link to="/">
             <BacktoHome /> Back to home
-          </a>
+          </Link>
         </div>
         <div className="FormTitle">
           <h1>Add your new recipe</h1>

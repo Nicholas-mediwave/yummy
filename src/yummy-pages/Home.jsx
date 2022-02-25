@@ -8,7 +8,11 @@ export const Home = () => {
   return (
     <PageHandler>
       <div className="HomeMainContainer">
-        <HeroImage ShowSearch Discription="Delicious recipes just click away" />
+        <HeroImage
+          ShowSearch
+          SearchIcon
+          Discription="Delicious recipes just click away"
+        />
         <Recipies />
       </div>
     </PageHandler>

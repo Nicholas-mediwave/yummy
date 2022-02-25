@@ -150,4 +150,16 @@ input[type="radio"]:checked {
   border-radius: 20px;
   padding: 15px 160px 11px 17px;
   margin-top: 9px;
+  resize: none;
+}
+
+.discription {
+  min-height: 60px;
+}
+.ingrediants {
+  min-height: 140px;
+}
+
+.stepstoprepare {
+  min-height: 272px;
 }

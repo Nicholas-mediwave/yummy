@@ -6,12 +6,17 @@ import { ViewRecipies } from "./yummy-pages/ViewRecipies";
 import "./App.css";
 
 function App() {
+  const PageNotFound = () => {
+    <div>404 Page not Found</div>;
+  };
+
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} exact={true} />
         <Route path="/AddRecipies" element={<AddRecipies />} />
         <Route path="/ViewRecipies" element={<ViewRecipies />} />
+        <Route element={PageNotFound} />
       </Routes>
     </Router>
   );
